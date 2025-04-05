@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Events</title>
+    <link rel="stylesheet" href="PastEvents.css">
+    <script src="PastEvents.js"></script>
+</head>
+<body>
+    <div id="main_div">
+        <h2 id="today">Today is <span id="current_date"></span></h2>
+        
+        <div class="input-group">
+            <button id="specific_day" class="btn">Specific date in the past</button>
+            <input type="text" id="date_input" placeholder="dd/mm">
+        </div>
+        
+        <button id="today_in_the_past" class="btn">Today in the past</button>
+        <button id="clear" class="btn">clear</button>
+        
+        <div id="secondary_div"></div>
+    </div>
+    
+    <script>
+        document.getElementById("current_date").innerText = new Date().toDateString();
+    </script>
+</body>
+</html>
